@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0600"
+   LastUpgradeVersion = "0720"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C682E21815B315EF00BE9DA7"
-               BuildableName = "libetpan-ios.a"
-               BlueprintName = "libetpan ios"
+               BlueprintIdentifier = "3A18BE2A1C74A790006FC755"
+               BuildableName = "libetpan-ios.framework"
+               BlueprintName = "libetpan-ios"
                ReferencedContainer = "container:libetpan.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3A18BE2A1C74A790006FC755"
+            BuildableName = "libetpan-ios.framework"
+            BlueprintName = "libetpan-ios"
+            ReferencedContainer = "container:libetpan.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,9 +54,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C682E21815B315EF00BE9DA7"
-            BuildableName = "libetpan-ios.a"
-            BlueprintName = "libetpan ios"
+            BlueprintIdentifier = "3A18BE2A1C74A790006FC755"
+            BuildableName = "libetpan-ios.framework"
+            BlueprintName = "libetpan-ios"
             ReferencedContainer = "container:libetpan.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -60,6 +69,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3A18BE2A1C74A790006FC755"
+            BuildableName = "libetpan-ios.framework"
+            BlueprintName = "libetpan-ios"
+            ReferencedContainer = "container:libetpan.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

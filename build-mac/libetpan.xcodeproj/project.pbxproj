@@ -11,6 +11,192 @@
 		365DFFD215D1C93100F2DD85 /* xgmmsgid.c in Sources */ = {isa = PBXBuildFile; fileRef = 365DFFD115D1C93100F2DD85 /* xgmmsgid.c */; };
 		3A18BE271C74745B006FC755 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18BE261C74745B006FC755 /* libssl.a */; };
 		3A18BE291C74745D006FC755 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18BE281C74745D006FC755 /* libcrypto.a */; };
+		3A18BE301C74A790006FC755 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E84F105335BC0059C3BA /* base64.c */; };
+		3A18BE311C74A790006FC755 /* carray.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E851105335BC0059C3BA /* carray.c */; };
+		3A18BE321C74A790006FC755 /* charconv.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E853105335BC0059C3BA /* charconv.c */; };
+		3A18BE331C74A790006FC755 /* chash.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E855105335BC0059C3BA /* chash.c */; };
+		3A18BE341C74A790006FC755 /* clist.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E857105335BC0059C3BA /* clist.c */; };
+		3A18BE351C74A790006FC755 /* connect.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E859105335BC0059C3BA /* connect.c */; };
+		3A18BE361C74A790006FC755 /* mail_cache_db.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E85D105335BC0059C3BA /* mail_cache_db.c */; };
+		3A18BE371C74A790006FC755 /* maillock.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E860105335BC0059C3BA /* maillock.c */; };
+		3A18BE381C74A790006FC755 /* mailsasl.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E862105335BC0059C3BA /* mailsasl.c */; };
+		3A18BE391C74A790006FC755 /* mailsem.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E864105335BC0059C3BA /* mailsem.c */; };
+		3A18BE3A1C74A790006FC755 /* mailstream.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E866105335BC0059C3BA /* mailstream.c */; };
+		3A18BE3B1C74A790006FC755 /* mailstream_cancel.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E868105335BC0059C3BA /* mailstream_cancel.c */; };
+		3A18BE3C1C74A790006FC755 /* mailstream_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E86B105335BC0059C3BA /* mailstream_helper.c */; };
+		3A18BE3D1C74A790006FC755 /* mailstream_low.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E86D105335BC0059C3BA /* mailstream_low.c */; };
+		3A18BE3E1C74A790006FC755 /* mailstream_socket.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E86F105335BC0059C3BA /* mailstream_socket.c */; };
+		3A18BE3F1C74A790006FC755 /* mailstream_ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E871105335BC0059C3BA /* mailstream_ssl.c */; };
+		3A18BE401C74A790006FC755 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E878105335BC0059C3BA /* md5.c */; };
+		3A18BE411C74A790006FC755 /* mmapstring.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E87B105335BC0059C3BA /* mmapstring.c */; };
+		3A18BE421C74A790006FC755 /* timeutils.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E87E105335BC0059C3BA /* timeutils.c */; };
+		3A18BE431C74A790006FC755 /* data_message_driver.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E888105335BC0059C3BA /* data_message_driver.c */; };
+		3A18BE441C74A790006FC755 /* dbdriver.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E893105335BC0059C3BA /* dbdriver.c */; };
+		3A18BE451C74A790006FC755 /* dbdriver_message.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E895105335BC0059C3BA /* dbdriver_message.c */; };
+		3A18BE461C74A790006FC755 /* dbstorage.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E898105335BC0059C3BA /* dbstorage.c */; };
+		3A18BE471C74A790006FC755 /* feeddriver.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8A2105335BC0059C3BA /* feeddriver.c */; };
+		3A18BE481C74A790006FC755 /* feeddriver_message.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8A4105335BC0059C3BA /* feeddriver_message.c */; };
+		3A18BE491C74A790006FC755 /* feedstorage.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8A7105335BC0059C3BA /* feedstorage.c */; };
+		3A18BE4A1C74A790006FC755 /* hotmailstorage.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8B0105335BC0059C3BA /* hotmailstorage.c */; };
+		3A18BE4B1C74A790006FC755 /* imapdriver.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8BE105335BC0059C3BA /* imapdriver.c */; };
+		3A18BE4C1C74A790006FC755 /* imapdriver_cached.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8C0105335BC0059C3BA /* imapdriver_cached.c */; };
+		3A18BE4D1C74A790006FC755 /* imapdriver_cached_message.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8C2105335BC0059C3BA /* imapdriver_cached_message.c */; };
+		3A18BE4E1C74A790006FC755 /* imapdriver_message.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8C4105335BC0059C3BA /* imapdriver_message.c */; };
+		3A18BE4F1C74A790006FC755 /* imapdriver_tools.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8C6105335BC0059C3BA /* imapdriver_tools.c */; };
+		3A18BE501C74A790006FC755 /* imapstorage.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8CA105335BC0059C3BA /* imapstorage.c */; };
+		3A18BE511C74A790006FC755 /* maildirdriver.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8D8105335BC0059C3BA /* maildirdriver.c */; };
+		3A18BE521C74A790006FC755 /* maildirdriver_cached.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8DA105335BC0059C3BA /* maildirdriver_cached.c */; };
+		3A18BE531C74A790006FC755 /* maildirdriver_cached_message.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8DC105335BC0059C3BA /* maildirdriver_cached_message.c */; };
+		3A18BE541C74A790006FC755 /* maildirdriver_message.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8DE105335BC0059C3BA /* maildirdriver_message.c */; };
+		3A18BE551C74A790006FC755 /* maildirdriver_tools.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8E0105335BC0059C3BA /* maildirdriver_tools.c */; };
+		3A18BE561C74A790006FC755 /* maildirstorage.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8E3105335BC0059C3BA /* maildirstorage.c */; };
+		3A18BE571C74A790006FC755 /* mboxdriver.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8F7105335BC0059C3BA /* mboxdriver.c */; };
+		3A18BE581C74A790006FC755 /* mboxdriver_cached.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8F9105335BC0059C3BA /* mboxdriver_cached.c */; };
+		3A18BE591C74A790006FC755 /* mboxdriver_cached_message.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8FB105335BC0059C3BA /* mboxdriver_cached_message.c */; };
+		3A18BE5A1C74A790006FC755 /* mboxdriver_message.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8FD105335BC0059C3BA /* mboxdriver_message.c */; };
+		3A18BE5B1C74A790006FC755 /* mboxdriver_tools.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E8FF105335BC0059C3BA /* mboxdriver_tools.c */; };
+		3A18BE5C1C74A790006FC755 /* mboxstorage.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E902105335BC0059C3BA /* mboxstorage.c */; };
+		3A18BE5D1C74A790006FC755 /* mhdriver.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E910105335BC0059C3BA /* mhdriver.c */; };
+		3A18BE5E1C74A790006FC755 /* mhdriver_cached.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E912105335BC0059C3BA /* mhdriver_cached.c */; };
+		3A18BE5F1C74A790006FC755 /* mhdriver_cached_message.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E914105335BC0059C3BA /* mhdriver_cached_message.c */; };
+		3A18BE601C74A790006FC755 /* mhdriver_message.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E916105335BC0059C3BA /* mhdriver_message.c */; };
+		3A18BE611C74A790006FC755 /* mhdriver_tools.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E918105335BC0059C3BA /* mhdriver_tools.c */; };
+		3A18BE621C74A790006FC755 /* mhstorage.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E91B105335BC0059C3BA /* mhstorage.c */; };
+		3A18BE631C74A790006FC755 /* mime_message_driver.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E924105335BC0059C3BA /* mime_message_driver.c */; };
+		3A18BE641C74A790006FC755 /* nntpdriver.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E932105335BC0059C3BA /* nntpdriver.c */; };
+		3A18BE651C74A790006FC755 /* nntpdriver_cached.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E934105335BC0059C3BA /* nntpdriver_cached.c */; };
+		3A18BE661C74A790006FC755 /* nntpdriver_cached_message.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E936105335BC0059C3BA /* nntpdriver_cached_message.c */; };
+		3A18BE671C74A790006FC755 /* nntpdriver_message.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E938105335BC0059C3BA /* nntpdriver_message.c */; };
+		3A18BE681C74A790006FC755 /* nntpdriver_tools.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E93A105335BC0059C3BA /* nntpdriver_tools.c */; };
+		3A18BE691C74A790006FC755 /* nntpstorage.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E93D105335BC0059C3BA /* nntpstorage.c */; };
+		3A18BE6A1C74A790006FC755 /* pop3driver.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E94B105335BC0059C3BA /* pop3driver.c */; };
+		3A18BE6B1C74A790006FC755 /* pop3driver_cached.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E94D105335BC0059C3BA /* pop3driver_cached.c */; };
+		3A18BE6C1C74A790006FC755 /* pop3driver_cached_message.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E94F105335BC0059C3BA /* pop3driver_cached_message.c */; };
+		3A18BE6D1C74A790006FC755 /* pop3driver_message.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E951105335BC0059C3BA /* pop3driver_message.c */; };
+		3A18BE6E1C74A790006FC755 /* pop3driver_tools.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E953105335BC0059C3BA /* pop3driver_tools.c */; };
+		3A18BE6F1C74A790006FC755 /* pop3storage.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E956105335BC0059C3BA /* pop3storage.c */; };
+		3A18BE701C74A790006FC755 /* maildriver.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E965105335BC0059C3BA /* maildriver.c */; };
+		3A18BE711C74A790006FC755 /* maildriver_tools.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E968105335BC0059C3BA /* maildriver_tools.c */; };
+		3A18BE721C74A790006FC755 /* maildriver_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E96A105335BC0059C3BA /* maildriver_types.c */; };
+		3A18BE731C74A790006FC755 /* maildriver_types_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E96C105335BC0059C3BA /* maildriver_types_helper.c */; };
+		3A18BE741C74A790006FC755 /* mailfolder.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E96E105335BC0059C3BA /* mailfolder.c */; };
+		3A18BE751C74A790006FC755 /* mailmessage.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E970105335BC0059C3BA /* mailmessage.c */; };
+		3A18BE761C74A790006FC755 /* mailmessage_tools.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E972105335BC0059C3BA /* mailmessage_tools.c */; };
+		3A18BE771C74A790006FC755 /* mailmessage_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E974105335BC0059C3BA /* mailmessage_types.c */; };
+		3A18BE781C74A790006FC755 /* mailstorage.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E976105335BC0059C3BA /* mailstorage.c */; };
+		3A18BE791C74A790006FC755 /* mailstorage_tools.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E978105335BC0059C3BA /* mailstorage_tools.c */; };
+		3A18BE7A1C74A790006FC755 /* generic_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E989105335BC0059C3BA /* generic_cache.c */; };
+		3A18BE7B1C74A790006FC755 /* imfcache.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E98C105335BC0059C3BA /* imfcache.c */; };
+		3A18BE7C1C74A790006FC755 /* mailthread.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E98E105335BC0059C3BA /* mailthread.c */; };
+		3A18BE7D1C74A790006FC755 /* mailthread_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E990105335BC0059C3BA /* mailthread_types.c */; };
+		3A18BE7E1C74A790006FC755 /* mailengine.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E99E105335BC0059C3BA /* mailengine.c */; };
+		3A18BE7F1C74A790006FC755 /* mailprivacy.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9A0105335BC0059C3BA /* mailprivacy.c */; };
+		3A18BE801C74A790006FC755 /* mailprivacy_gnupg.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9A2105335BC0059C3BA /* mailprivacy_gnupg.c */; };
+		3A18BE811C74A790006FC755 /* mailprivacy_smime.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9A4105335BC0059C3BA /* mailprivacy_smime.c */; };
+		3A18BE821C74A790006FC755 /* mailprivacy_tools.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9A6105335BC0059C3BA /* mailprivacy_tools.c */; };
+		3A18BE831C74A790006FC755 /* date.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9BB105335BC0059C3BA /* date.c */; };
+		3A18BE841C74A790006FC755 /* newsfeed.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9C0105335BC0059C3BA /* newsfeed.c */; };
+		3A18BE851C74A790006FC755 /* newsfeed_item.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9C2105335BC0059C3BA /* newsfeed_item.c */; };
+		3A18BE861C74A790006FC755 /* newsfeed_item_enclosure.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9C4105335BC0059C3BA /* newsfeed_item_enclosure.c */; };
+		3A18BE871C74A790006FC755 /* newsfeed_private.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9C6105335BC0059C3BA /* newsfeed_private.c */; };
+		3A18BE881C74A790006FC755 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9C9105335BC0059C3BA /* parser.c */; };
+		3A18BE891C74A790006FC755 /* parser_atom03.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9CB105335BC0059C3BA /* parser_atom03.c */; };
+		3A18BE8A1C74A790006FC755 /* parser_atom10.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9CD105335BC0059C3BA /* parser_atom10.c */; };
+		3A18BE8B1C74A790006FC755 /* parser_rdf.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9CF105335BC0059C3BA /* parser_rdf.c */; };
+		3A18BE8C1C74A790006FC755 /* parser_rss20.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9D1105335BC0059C3BA /* parser_rss20.c */; };
+		3A18BE8D1C74A790006FC755 /* acl.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9EE105335BC0059C3BA /* acl.c */; };
+		3A18BE8E1C74A790006FC755 /* acl_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9F0105335BC0059C3BA /* acl_parser.c */; };
+		3A18BE8F1C74A790006FC755 /* acl_sender.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9F2105335BC0059C3BA /* acl_sender.c */; };
+		3A18BE901C74A790006FC755 /* acl_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9F4105335BC0059C3BA /* acl_types.c */; };
+		3A18BE911C74A790006FC755 /* annotatemore.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9F6105335BC0059C3BA /* annotatemore.c */; };
+		3A18BE921C74A790006FC755 /* annotatemore_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9F8105335BC0059C3BA /* annotatemore_parser.c */; };
+		3A18BE931C74A790006FC755 /* annotatemore_sender.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9FA105335BC0059C3BA /* annotatemore_sender.c */; };
+		3A18BE941C74A790006FC755 /* annotatemore_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9FC105335BC0059C3BA /* annotatemore_types.c */; };
+		3A18BE951C74A790006FC755 /* idle.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9E9FE105335BC0059C3BA /* idle.c */; };
+		3A18BE961C74A790006FC755 /* mailimap.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA00105335BC0059C3BA /* mailimap.c */; };
+		3A18BE971C74A790006FC755 /* mailimap_extension.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA02105335BC0059C3BA /* mailimap_extension.c */; };
+		3A18BE981C74A790006FC755 /* mailimap_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA05105335BC0059C3BA /* mailimap_helper.c */; };
+		3A18BE991C74A790006FC755 /* mailimap_keywords.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA07105335BC0059C3BA /* mailimap_keywords.c */; };
+		3A18BE9A1C74A790006FC755 /* mailimap_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA09105335BC0059C3BA /* mailimap_parser.c */; };
+		3A18BE9B1C74A790006FC755 /* mailimap_print.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA0B105335BC0059C3BA /* mailimap_print.c */; };
+		3A18BE9C1C74A790006FC755 /* mailimap_sender.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA0D105335BC0059C3BA /* mailimap_sender.c */; };
+		3A18BE9D1C74A790006FC755 /* mailimap_socket.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA0F105335BC0059C3BA /* mailimap_socket.c */; };
+		3A18BE9E1C74A790006FC755 /* mailimap_ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA11105335BC0059C3BA /* mailimap_ssl.c */; };
+		3A18BE9F1C74A790006FC755 /* mailimap_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA13105335BC0059C3BA /* mailimap_types.c */; };
+		3A18BEA01C74A790006FC755 /* mailimap_types_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA15105335BC0059C3BA /* mailimap_types_helper.c */; };
+		3A18BEA11C74A790006FC755 /* uidplus.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA1B105335BC0059C3BA /* uidplus.c */; };
+		3A18BEA21C74A790006FC755 /* uidplus_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA1D105335BC0059C3BA /* uidplus_parser.c */; };
+		3A18BEA31C74A790006FC755 /* uidplus_sender.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA1F105335BC0059C3BA /* uidplus_sender.c */; };
+		3A18BEA41C74A790006FC755 /* uidplus_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA21105335BC0059C3BA /* uidplus_types.c */; };
+		3A18BEA51C74A790006FC755 /* mailimf.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA2C105335BC0059C3BA /* mailimf.c */; };
+		3A18BEA61C74A790006FC755 /* mailimf_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA2E105335BC0059C3BA /* mailimf_types.c */; };
+		3A18BEA71C74A790006FC755 /* mailimf_types_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA30105335BC0059C3BA /* mailimf_types_helper.c */; };
+		3A18BEA81C74A790006FC755 /* mailimf_write_file.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA33105335BC0059C3BA /* mailimf_write_file.c */; };
+		3A18BEA91C74A790006FC755 /* mailsmtp_oauth2.c in Sources */ = {isa = PBXBuildFile; fileRef = C64DC0151788AB3C0012CA0B /* mailsmtp_oauth2.c */; };
+		3A18BEAA1C74A790006FC755 /* mailimf_write_generic.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA35105335BC0059C3BA /* mailimf_write_generic.c */; };
+		3A18BEAB1C74A790006FC755 /* mailimf_write_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA37105335BC0059C3BA /* mailimf_write_mem.c */; };
+		3A18BEAC1C74A790006FC755 /* maildir.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA41105335BC0059C3BA /* maildir.c */; };
+		3A18BEAD1C74A790006FC755 /* mailmbox.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA50105335BC0059C3BA /* mailmbox.c */; };
+		3A18BEAE1C74A790006FC755 /* mailmbox_parse.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA52105335BC0059C3BA /* mailmbox_parse.c */; };
+		3A18BEAF1C74A790006FC755 /* mailmbox_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA54105335BC0059C3BA /* mailmbox_types.c */; };
+		3A18BEB01C74A790006FC755 /* mailmh.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA5E105335BC0059C3BA /* mailmh.c */; };
+		3A18BEB11C74A790006FC755 /* mailmime.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA6F105335BC0059C3BA /* mailmime.c */; };
+		3A18BEB21C74A790006FC755 /* mailmime_content.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA71105335BC0059C3BA /* mailmime_content.c */; };
+		3A18BEB31C74A790006FC755 /* mailmime_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA73105335BC0059C3BA /* mailmime_decode.c */; };
+		3A18BEB41C74A790006FC755 /* mailmime_disposition.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA75105335BC0059C3BA /* mailmime_disposition.c */; };
+		3A18BEB51C74A790006FC755 /* mailmime_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA77105335BC0059C3BA /* mailmime_types.c */; };
+		3A18BEB61C74A790006FC755 /* mailmime_types_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA79105335BC0059C3BA /* mailmime_types_helper.c */; };
+		3A18BEB71C74A790006FC755 /* mailmime_write_file.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA7C105335BC0059C3BA /* mailmime_write_file.c */; };
+		3A18BEB81C74A790006FC755 /* mailmime_write_generic.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA7E105335BC0059C3BA /* mailmime_write_generic.c */; };
+		3A18BEB91C74A790006FC755 /* mailmime_write_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA80105335BC0059C3BA /* mailmime_write_mem.c */; };
+		3A18BEBA1C74A790006FC755 /* newsnntp.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA8F105335BC0059C3BA /* newsnntp.c */; };
+		3A18BEBB1C74A790006FC755 /* newsnntp_socket.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA91105335BC0059C3BA /* newsnntp_socket.c */; };
+		3A18BEBC1C74A790006FC755 /* newsnntp_ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA93105335BC0059C3BA /* newsnntp_ssl.c */; };
+		3A18BEBD1C74A790006FC755 /* mailpop3.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA9D105335BC0059C3BA /* mailpop3.c */; };
+		3A18BEBE1C74A790006FC755 /* mailpop3_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EA9F105335BC0059C3BA /* mailpop3_helper.c */; };
+		3A18BEBF1C74A790006FC755 /* mailpop3_socket.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EAA1105335BC0059C3BA /* mailpop3_socket.c */; };
+		3A18BEC01C74A790006FC755 /* mailpop3_ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EAA3105335BC0059C3BA /* mailpop3_ssl.c */; };
+		3A18BEC11C74A790006FC755 /* mailsmtp.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EAB0105335BC0059C3BA /* mailsmtp.c */; };
+		3A18BEC21C74A790006FC755 /* mailsmtp_helper.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EAB2105335BC0059C3BA /* mailsmtp_helper.c */; };
+		3A18BEC31C74A790006FC755 /* mailsmtp_socket.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EAB4105335BC0059C3BA /* mailsmtp_socket.c */; };
+		3A18BEC41C74A790006FC755 /* mailsmtp_ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EAB6105335BC0059C3BA /* mailsmtp_ssl.c */; };
+		3A18BEC51C74A790006FC755 /* libetpan_version.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F9EAC2105335BD0059C3BA /* libetpan_version.c */; };
+		3A18BEC61C74A790006FC755 /* quota.c in Sources */ = {isa = PBXBuildFile; fileRef = C6E57200110376F200897274 /* quota.c */; };
+		3A18BEC71C74A790006FC755 /* quota_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = C6E571FA110376F200897274 /* quota_parser.c */; };
+		3A18BEC81C74A790006FC755 /* quota_sender.c in Sources */ = {isa = PBXBuildFile; fileRef = C6E571FC110376F200897274 /* quota_sender.c */; };
+		3A18BEC91C74A790006FC755 /* quota_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C6E571FE110376F200897274 /* quota_types.c */; };
+		3A18BECA1C74A790006FC755 /* namespace.c in Sources */ = {isa = PBXBuildFile; fileRef = C65179E4130E84BD004ADD56 /* namespace.c */; };
+		3A18BECB1C74A790006FC755 /* namespace_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = C65179F1130E85CA004ADD56 /* namespace_parser.c */; };
+		3A18BECC1C74A790006FC755 /* namespace_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C6517A06130E86C6004ADD56 /* namespace_types.c */; };
+		3A18BECD1C74A790006FC755 /* namespace_sender.c in Sources */ = {isa = PBXBuildFile; fileRef = C6517A0C130E86D3004ADD56 /* namespace_sender.c */; };
+		3A18BECE1C74A790006FC755 /* xlist.c in Sources */ = {isa = PBXBuildFile; fileRef = C6667DED1342ACCD00969A8E /* xlist.c */; };
+		3A18BECF1C74A790006FC755 /* mailimap_oauth2.c in Sources */ = {isa = PBXBuildFile; fileRef = C60136961776D16A00A5AF45 /* mailimap_oauth2.c */; };
+		3A18BED01C74A790006FC755 /* xgmlabels.c in Sources */ = {isa = PBXBuildFile; fileRef = C6CE9B1514AA9C8900D20BA6 /* xgmlabels.c */; };
+		3A18BED11C74A790006FC755 /* xgmmsgid.c in Sources */ = {isa = PBXBuildFile; fileRef = 365DFFD115D1C93100F2DD85 /* xgmmsgid.c */; };
+		3A18BED21C74A790006FC755 /* mailstream_cfstream.c in Sources */ = {isa = PBXBuildFile; fileRef = C6EFB8761433F1F300F805C0 /* mailstream_cfstream.c */; };
+		3A18BED31C74A790006FC755 /* mailimap_id_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = C64EA7B916A00CC100778456 /* mailimap_id_parser.c */; };
+		3A18BED41C74A790006FC755 /* mailimap_id_sender.c in Sources */ = {isa = PBXBuildFile; fileRef = C64EA7BB16A00CC200778456 /* mailimap_id_sender.c */; };
+		3A18BED51C74A790006FC755 /* mailimap_id_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C64EA7BD16A00CC200778456 /* mailimap_id_types.c */; };
+		3A18BED61C74A790006FC755 /* mailimap_id.c in Sources */ = {isa = PBXBuildFile; fileRef = C64EA7BF16A00CC300778456 /* mailimap_id.c */; };
+		3A18BED71C74A790006FC755 /* enable.c in Sources */ = {isa = PBXBuildFile; fileRef = C60E7B9816C3809400A25BF4 /* enable.c */; };
+		3A18BED81C74A790006FC755 /* condstore_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C6635C3616DFF10E0066276E /* condstore_types.c */; };
+		3A18BED91C74A790006FC755 /* condstore.c in Sources */ = {isa = PBXBuildFile; fileRef = C6635C3816DFF10E0066276E /* condstore.c */; };
+		3A18BEDA1C74A790006FC755 /* qresync_types.c in Sources */ = {isa = PBXBuildFile; fileRef = C64BB21416E2FC2F000DB34C /* qresync_types.c */; };
+		3A18BEDB1C74A790006FC755 /* qresync.c in Sources */ = {isa = PBXBuildFile; fileRef = C64BB21616E2FC2F000DB34C /* qresync.c */; };
+		3A18BEDC1C74A790006FC755 /* xgmthrid.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F61F721701409B0073032E /* xgmthrid.c */; };
+		3A18BEDD1C74A790006FC755 /* mailimap_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75ECD917040F91007F9972 /* mailimap_sort.c */; };
+		3A18BEDE1C74A790006FC755 /* mailimap_sort_types.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75ECE5170414B8007F9972 /* mailimap_sort_types.c */; };
+		3A18BEDF1C74A790006FC755 /* mailstream_compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 2307A00A170AAA5500C43C59 /* mailstream_compress.c */; };
+		3A18BEE01C74A790006FC755 /* mailimap_compress.c in Sources */ = {isa = PBXBuildFile; fileRef = C668E2D81736004400A2BB47 /* mailimap_compress.c */; };
+		3A18BEF41C74BD04006FC755 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18BEF31C74BD04006FC755 /* MobileCoreServices.framework */; };
+		3A18BEF61C74BD0F006FC755 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18BEF51C74BD0F006FC755 /* CoreFoundation.framework */; };
+		3A18BEF81C74BF15006FC755 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18BEF71C74BF15006FC755 /* Security.framework */; };
+		3A18BEFA1C74BFBE006FC755 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18BEF91C74BFBE006FC755 /* CFNetwork.framework */; };
+		3A18BEFB1C74BFD1006FC755 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C69BA85F17DF63C900D601B7 /* libz.dylib */; };
+		3A18BEFC1C74BFDE006FC755 /* libsasl2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F9EDA5105339380059C3BA /* libsasl2.dylib */; };
+		3A18BEFD1C74BFF1006FC755 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F9EDAA1053394C0059C3BA /* libiconv.dylib */; };
+		3A18BEFE1C74C1A5006FC755 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18BE261C74745B006FC755 /* libssl.a */; };
+		3A18BEFF1C74C1A8006FC755 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18BE281C74745D006FC755 /* libcrypto.a */; };
 		8A75ECDA17040F92007F9972 /* mailimap_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75ECD917040F91007F9972 /* mailimap_sort.c */; };
 		8A75ECDB17040F92007F9972 /* mailimap_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75ECD917040F91007F9972 /* mailimap_sort.c */; };
 		8A75ECDC17040F92007F9972 /* mailimap_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75ECD917040F91007F9972 /* mailimap_sort.c */; };
@@ -553,6 +739,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3A18BEF11C74A888006FC755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6635C4D16E002340066276E;
+			remoteInfo = "libetpan-prepare-ios";
+		};
 		C6635C4716E000310066276E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -583,6 +776,11 @@
 		365DFFD815D1CF1800F2DD85 /* xgmmsgid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xgmmsgid.h; sourceTree = "<group>"; };
 		3A18BE261C74745B006FC755 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = libssl/lib/libssl.a; sourceTree = "<group>"; };
 		3A18BE281C74745D006FC755 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = libssl/lib/libcrypto.a; sourceTree = "<group>"; };
+		3A18BEEF1C74A790006FC755 /* libetpan-ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "libetpan-ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A18BEF31C74BD04006FC755 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		3A18BEF51C74BD0F006FC755 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A18BEF71C74BF15006FC755 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		3A18BEF91C74BFBE006FC755 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 		8A75ECD917040F91007F9972 /* mailimap_sort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mailimap_sort.c; sourceTree = "<group>"; };
 		8A75ECDD17040FBD007F9972 /* mailimap_sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mailimap_sort.h; sourceTree = "<group>"; };
 		8A75ECE5170414B8007F9972 /* mailimap_sort_types.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mailimap_sort_types.c; sourceTree = "<group>"; };
@@ -984,6 +1182,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3A18BEE11C74A790006FC755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A18BEFE1C74C1A5006FC755 /* libssl.a in Frameworks */,
+				3A18BEFD1C74BFF1006FC755 /* libiconv.dylib in Frameworks */,
+				3A18BEFC1C74BFDE006FC755 /* libsasl2.dylib in Frameworks */,
+				3A18BEFA1C74BFBE006FC755 /* CFNetwork.framework in Frameworks */,
+				3A18BEFB1C74BFD1006FC755 /* libz.dylib in Frameworks */,
+				3A18BEF81C74BF15006FC755 /* Security.framework in Frameworks */,
+				3A18BEF61C74BD0F006FC755 /* CoreFoundation.framework in Frameworks */,
+				3A18BEF41C74BD04006FC755 /* MobileCoreServices.framework in Frameworks */,
+				3A18BEFF1C74C1A8006FC755 /* libcrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF560486A6940098B216 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1026,6 +1240,7 @@
 				8DC2EF5B0486A6940098B216 /* libetpan.framework */,
 				C69AB10A10546FE500F32FBD /* libetpan.a */,
 				C682E2C015B315EF00BE9DA7 /* libetpan-ios.a */,
+				3A18BEEF1C74A790006FC755 /* libetpan-ios.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1049,6 +1264,10 @@
 			children = (
 				3A18BE281C74745D006FC755 /* libcrypto.a */,
 				3A18BE261C74745B006FC755 /* libssl.a */,
+				3A18BEF91C74BFBE006FC755 /* CFNetwork.framework */,
+				3A18BEF71C74BF15006FC755 /* Security.framework */,
+				3A18BEF51C74BD0F006FC755 /* CoreFoundation.framework */,
+				3A18BEF31C74BD04006FC755 /* MobileCoreServices.framework */,
 				C6F9ED9A105338F60059C3BA /* Libraries */,
 				C6EFB8AD1433F58500F805C0 /* CoreFoundation.framework */,
 				C6EFB8B31433F5A400F805C0 /* CoreServices.framework */,
@@ -1749,6 +1968,26 @@
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
+		3A18BE2A1C74A790006FC755 /* libetpan-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A18BEEC1C74A790006FC755 /* Build configuration list for PBXNativeTarget "libetpan-ios" */;
+			buildPhases = (
+				3A18BE2D1C74A790006FC755 /* ShellScript */,
+				3A18BE2E1C74A790006FC755 /* Resources */,
+				3A18BE2F1C74A790006FC755 /* Sources */,
+				3A18BEE11C74A790006FC755 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A18BEF21C74A888006FC755 /* PBXTargetDependency */,
+			);
+			name = "libetpan-ios";
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = libetpan;
+			productReference = 3A18BEEF1C74A790006FC755 /* libetpan-ios.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		8DC2EF4F0486A6940098B216 /* libetpan */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "libetpan" */;
@@ -1830,6 +2069,7 @@
 			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* libetpan */,
+				3A18BE2A1C74A790006FC755 /* libetpan-ios */,
 				C69AB10910546FE500F32FBD /* static libetpan */,
 				C682E21815B315EF00BE9DA7 /* libetpan ios */,
 				C6635C4316DFFE6E0066276E /* libetpan-prepare */,
@@ -1839,6 +2079,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3A18BE2E1C74A790006FC755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF520486A6940098B216 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1849,6 +2096,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3A18BE2D1C74A790006FC755 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$BUILT_PRODUCTS_DIR/$PUBLIC_HEADERS_FOLDER_PATH\"\nmkdir -p \"$BUILT_PRODUCTS_DIR/include/libetpan\"\nln -sf \"Versions/Current/Headers\" \"$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME/Headers\"\nrsync -aL \"$SRCROOT/../include/libetpan/\" \"$BUILT_PRODUCTS_DIR/include/libetpan/\"\nrsync -aL \"$SRCROOT/../include/libetpan/\" \"$BUILT_PRODUCTS_DIR/$PUBLIC_HEADERS_FOLDER_PATH/\"\n";
+		};
 		C6635C3316DFEFE00066276E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1904,6 +2164,190 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3A18BE2F1C74A790006FC755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A18BE301C74A790006FC755 /* base64.c in Sources */,
+				3A18BE311C74A790006FC755 /* carray.c in Sources */,
+				3A18BE321C74A790006FC755 /* charconv.c in Sources */,
+				3A18BE331C74A790006FC755 /* chash.c in Sources */,
+				3A18BE341C74A790006FC755 /* clist.c in Sources */,
+				3A18BE351C74A790006FC755 /* connect.c in Sources */,
+				3A18BE361C74A790006FC755 /* mail_cache_db.c in Sources */,
+				3A18BE371C74A790006FC755 /* maillock.c in Sources */,
+				3A18BE381C74A790006FC755 /* mailsasl.c in Sources */,
+				3A18BE391C74A790006FC755 /* mailsem.c in Sources */,
+				3A18BE3A1C74A790006FC755 /* mailstream.c in Sources */,
+				3A18BE3B1C74A790006FC755 /* mailstream_cancel.c in Sources */,
+				3A18BE3C1C74A790006FC755 /* mailstream_helper.c in Sources */,
+				3A18BE3D1C74A790006FC755 /* mailstream_low.c in Sources */,
+				3A18BE3E1C74A790006FC755 /* mailstream_socket.c in Sources */,
+				3A18BE3F1C74A790006FC755 /* mailstream_ssl.c in Sources */,
+				3A18BE401C74A790006FC755 /* md5.c in Sources */,
+				3A18BE411C74A790006FC755 /* mmapstring.c in Sources */,
+				3A18BE421C74A790006FC755 /* timeutils.c in Sources */,
+				3A18BE431C74A790006FC755 /* data_message_driver.c in Sources */,
+				3A18BE441C74A790006FC755 /* dbdriver.c in Sources */,
+				3A18BE451C74A790006FC755 /* dbdriver_message.c in Sources */,
+				3A18BE461C74A790006FC755 /* dbstorage.c in Sources */,
+				3A18BE471C74A790006FC755 /* feeddriver.c in Sources */,
+				3A18BE481C74A790006FC755 /* feeddriver_message.c in Sources */,
+				3A18BE491C74A790006FC755 /* feedstorage.c in Sources */,
+				3A18BE4A1C74A790006FC755 /* hotmailstorage.c in Sources */,
+				3A18BE4B1C74A790006FC755 /* imapdriver.c in Sources */,
+				3A18BE4C1C74A790006FC755 /* imapdriver_cached.c in Sources */,
+				3A18BE4D1C74A790006FC755 /* imapdriver_cached_message.c in Sources */,
+				3A18BE4E1C74A790006FC755 /* imapdriver_message.c in Sources */,
+				3A18BE4F1C74A790006FC755 /* imapdriver_tools.c in Sources */,
+				3A18BE501C74A790006FC755 /* imapstorage.c in Sources */,
+				3A18BE511C74A790006FC755 /* maildirdriver.c in Sources */,
+				3A18BE521C74A790006FC755 /* maildirdriver_cached.c in Sources */,
+				3A18BE531C74A790006FC755 /* maildirdriver_cached_message.c in Sources */,
+				3A18BE541C74A790006FC755 /* maildirdriver_message.c in Sources */,
+				3A18BE551C74A790006FC755 /* maildirdriver_tools.c in Sources */,
+				3A18BE561C74A790006FC755 /* maildirstorage.c in Sources */,
+				3A18BE571C74A790006FC755 /* mboxdriver.c in Sources */,
+				3A18BE581C74A790006FC755 /* mboxdriver_cached.c in Sources */,
+				3A18BE591C74A790006FC755 /* mboxdriver_cached_message.c in Sources */,
+				3A18BE5A1C74A790006FC755 /* mboxdriver_message.c in Sources */,
+				3A18BE5B1C74A790006FC755 /* mboxdriver_tools.c in Sources */,
+				3A18BE5C1C74A790006FC755 /* mboxstorage.c in Sources */,
+				3A18BE5D1C74A790006FC755 /* mhdriver.c in Sources */,
+				3A18BE5E1C74A790006FC755 /* mhdriver_cached.c in Sources */,
+				3A18BE5F1C74A790006FC755 /* mhdriver_cached_message.c in Sources */,
+				3A18BE601C74A790006FC755 /* mhdriver_message.c in Sources */,
+				3A18BE611C74A790006FC755 /* mhdriver_tools.c in Sources */,
+				3A18BE621C74A790006FC755 /* mhstorage.c in Sources */,
+				3A18BE631C74A790006FC755 /* mime_message_driver.c in Sources */,
+				3A18BE641C74A790006FC755 /* nntpdriver.c in Sources */,
+				3A18BE651C74A790006FC755 /* nntpdriver_cached.c in Sources */,
+				3A18BE661C74A790006FC755 /* nntpdriver_cached_message.c in Sources */,
+				3A18BE671C74A790006FC755 /* nntpdriver_message.c in Sources */,
+				3A18BE681C74A790006FC755 /* nntpdriver_tools.c in Sources */,
+				3A18BE691C74A790006FC755 /* nntpstorage.c in Sources */,
+				3A18BE6A1C74A790006FC755 /* pop3driver.c in Sources */,
+				3A18BE6B1C74A790006FC755 /* pop3driver_cached.c in Sources */,
+				3A18BE6C1C74A790006FC755 /* pop3driver_cached_message.c in Sources */,
+				3A18BE6D1C74A790006FC755 /* pop3driver_message.c in Sources */,
+				3A18BE6E1C74A790006FC755 /* pop3driver_tools.c in Sources */,
+				3A18BE6F1C74A790006FC755 /* pop3storage.c in Sources */,
+				3A18BE701C74A790006FC755 /* maildriver.c in Sources */,
+				3A18BE711C74A790006FC755 /* maildriver_tools.c in Sources */,
+				3A18BE721C74A790006FC755 /* maildriver_types.c in Sources */,
+				3A18BE731C74A790006FC755 /* maildriver_types_helper.c in Sources */,
+				3A18BE741C74A790006FC755 /* mailfolder.c in Sources */,
+				3A18BE751C74A790006FC755 /* mailmessage.c in Sources */,
+				3A18BE761C74A790006FC755 /* mailmessage_tools.c in Sources */,
+				3A18BE771C74A790006FC755 /* mailmessage_types.c in Sources */,
+				3A18BE781C74A790006FC755 /* mailstorage.c in Sources */,
+				3A18BE791C74A790006FC755 /* mailstorage_tools.c in Sources */,
+				3A18BE7A1C74A790006FC755 /* generic_cache.c in Sources */,
+				3A18BE7B1C74A790006FC755 /* imfcache.c in Sources */,
+				3A18BE7C1C74A790006FC755 /* mailthread.c in Sources */,
+				3A18BE7D1C74A790006FC755 /* mailthread_types.c in Sources */,
+				3A18BE7E1C74A790006FC755 /* mailengine.c in Sources */,
+				3A18BE7F1C74A790006FC755 /* mailprivacy.c in Sources */,
+				3A18BE801C74A790006FC755 /* mailprivacy_gnupg.c in Sources */,
+				3A18BE811C74A790006FC755 /* mailprivacy_smime.c in Sources */,
+				3A18BE821C74A790006FC755 /* mailprivacy_tools.c in Sources */,
+				3A18BE831C74A790006FC755 /* date.c in Sources */,
+				3A18BE841C74A790006FC755 /* newsfeed.c in Sources */,
+				3A18BE851C74A790006FC755 /* newsfeed_item.c in Sources */,
+				3A18BE861C74A790006FC755 /* newsfeed_item_enclosure.c in Sources */,
+				3A18BE871C74A790006FC755 /* newsfeed_private.c in Sources */,
+				3A18BE881C74A790006FC755 /* parser.c in Sources */,
+				3A18BE891C74A790006FC755 /* parser_atom03.c in Sources */,
+				3A18BE8A1C74A790006FC755 /* parser_atom10.c in Sources */,
+				3A18BE8B1C74A790006FC755 /* parser_rdf.c in Sources */,
+				3A18BE8C1C74A790006FC755 /* parser_rss20.c in Sources */,
+				3A18BE8D1C74A790006FC755 /* acl.c in Sources */,
+				3A18BE8E1C74A790006FC755 /* acl_parser.c in Sources */,
+				3A18BE8F1C74A790006FC755 /* acl_sender.c in Sources */,
+				3A18BE901C74A790006FC755 /* acl_types.c in Sources */,
+				3A18BE911C74A790006FC755 /* annotatemore.c in Sources */,
+				3A18BE921C74A790006FC755 /* annotatemore_parser.c in Sources */,
+				3A18BE931C74A790006FC755 /* annotatemore_sender.c in Sources */,
+				3A18BE941C74A790006FC755 /* annotatemore_types.c in Sources */,
+				3A18BE951C74A790006FC755 /* idle.c in Sources */,
+				3A18BE961C74A790006FC755 /* mailimap.c in Sources */,
+				3A18BE971C74A790006FC755 /* mailimap_extension.c in Sources */,
+				3A18BE981C74A790006FC755 /* mailimap_helper.c in Sources */,
+				3A18BE991C74A790006FC755 /* mailimap_keywords.c in Sources */,
+				3A18BE9A1C74A790006FC755 /* mailimap_parser.c in Sources */,
+				3A18BE9B1C74A790006FC755 /* mailimap_print.c in Sources */,
+				3A18BE9C1C74A790006FC755 /* mailimap_sender.c in Sources */,
+				3A18BE9D1C74A790006FC755 /* mailimap_socket.c in Sources */,
+				3A18BE9E1C74A790006FC755 /* mailimap_ssl.c in Sources */,
+				3A18BE9F1C74A790006FC755 /* mailimap_types.c in Sources */,
+				3A18BEA01C74A790006FC755 /* mailimap_types_helper.c in Sources */,
+				3A18BEA11C74A790006FC755 /* uidplus.c in Sources */,
+				3A18BEA21C74A790006FC755 /* uidplus_parser.c in Sources */,
+				3A18BEA31C74A790006FC755 /* uidplus_sender.c in Sources */,
+				3A18BEA41C74A790006FC755 /* uidplus_types.c in Sources */,
+				3A18BEA51C74A790006FC755 /* mailimf.c in Sources */,
+				3A18BEA61C74A790006FC755 /* mailimf_types.c in Sources */,
+				3A18BEA71C74A790006FC755 /* mailimf_types_helper.c in Sources */,
+				3A18BEA81C74A790006FC755 /* mailimf_write_file.c in Sources */,
+				3A18BEA91C74A790006FC755 /* mailsmtp_oauth2.c in Sources */,
+				3A18BEAA1C74A790006FC755 /* mailimf_write_generic.c in Sources */,
+				3A18BEAB1C74A790006FC755 /* mailimf_write_mem.c in Sources */,
+				3A18BEAC1C74A790006FC755 /* maildir.c in Sources */,
+				3A18BEAD1C74A790006FC755 /* mailmbox.c in Sources */,
+				3A18BEAE1C74A790006FC755 /* mailmbox_parse.c in Sources */,
+				3A18BEAF1C74A790006FC755 /* mailmbox_types.c in Sources */,
+				3A18BEB01C74A790006FC755 /* mailmh.c in Sources */,
+				3A18BEB11C74A790006FC755 /* mailmime.c in Sources */,
+				3A18BEB21C74A790006FC755 /* mailmime_content.c in Sources */,
+				3A18BEB31C74A790006FC755 /* mailmime_decode.c in Sources */,
+				3A18BEB41C74A790006FC755 /* mailmime_disposition.c in Sources */,
+				3A18BEB51C74A790006FC755 /* mailmime_types.c in Sources */,
+				3A18BEB61C74A790006FC755 /* mailmime_types_helper.c in Sources */,
+				3A18BEB71C74A790006FC755 /* mailmime_write_file.c in Sources */,
+				3A18BEB81C74A790006FC755 /* mailmime_write_generic.c in Sources */,
+				3A18BEB91C74A790006FC755 /* mailmime_write_mem.c in Sources */,
+				3A18BEBA1C74A790006FC755 /* newsnntp.c in Sources */,
+				3A18BEBB1C74A790006FC755 /* newsnntp_socket.c in Sources */,
+				3A18BEBC1C74A790006FC755 /* newsnntp_ssl.c in Sources */,
+				3A18BEBD1C74A790006FC755 /* mailpop3.c in Sources */,
+				3A18BEBE1C74A790006FC755 /* mailpop3_helper.c in Sources */,
+				3A18BEBF1C74A790006FC755 /* mailpop3_socket.c in Sources */,
+				3A18BEC01C74A790006FC755 /* mailpop3_ssl.c in Sources */,
+				3A18BEC11C74A790006FC755 /* mailsmtp.c in Sources */,
+				3A18BEC21C74A790006FC755 /* mailsmtp_helper.c in Sources */,
+				3A18BEC31C74A790006FC755 /* mailsmtp_socket.c in Sources */,
+				3A18BEC41C74A790006FC755 /* mailsmtp_ssl.c in Sources */,
+				3A18BEC51C74A790006FC755 /* libetpan_version.c in Sources */,
+				3A18BEC61C74A790006FC755 /* quota.c in Sources */,
+				3A18BEC71C74A790006FC755 /* quota_parser.c in Sources */,
+				3A18BEC81C74A790006FC755 /* quota_sender.c in Sources */,
+				3A18BEC91C74A790006FC755 /* quota_types.c in Sources */,
+				3A18BECA1C74A790006FC755 /* namespace.c in Sources */,
+				3A18BECB1C74A790006FC755 /* namespace_parser.c in Sources */,
+				3A18BECC1C74A790006FC755 /* namespace_types.c in Sources */,
+				3A18BECD1C74A790006FC755 /* namespace_sender.c in Sources */,
+				3A18BECE1C74A790006FC755 /* xlist.c in Sources */,
+				3A18BECF1C74A790006FC755 /* mailimap_oauth2.c in Sources */,
+				3A18BED01C74A790006FC755 /* xgmlabels.c in Sources */,
+				3A18BED11C74A790006FC755 /* xgmmsgid.c in Sources */,
+				3A18BED21C74A790006FC755 /* mailstream_cfstream.c in Sources */,
+				3A18BED31C74A790006FC755 /* mailimap_id_parser.c in Sources */,
+				3A18BED41C74A790006FC755 /* mailimap_id_sender.c in Sources */,
+				3A18BED51C74A790006FC755 /* mailimap_id_types.c in Sources */,
+				3A18BED61C74A790006FC755 /* mailimap_id.c in Sources */,
+				3A18BED71C74A790006FC755 /* enable.c in Sources */,
+				3A18BED81C74A790006FC755 /* condstore_types.c in Sources */,
+				3A18BED91C74A790006FC755 /* condstore.c in Sources */,
+				3A18BEDA1C74A790006FC755 /* qresync_types.c in Sources */,
+				3A18BEDB1C74A790006FC755 /* qresync.c in Sources */,
+				3A18BEDC1C74A790006FC755 /* xgmthrid.c in Sources */,
+				3A18BEDD1C74A790006FC755 /* mailimap_sort.c in Sources */,
+				3A18BEDE1C74A790006FC755 /* mailimap_sort_types.c in Sources */,
+				3A18BEDF1C74A790006FC755 /* mailstream_compress.c in Sources */,
+				3A18BEE01C74A790006FC755 /* mailimap_compress.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8DC2EF540486A6940098B216 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2459,6 +2903,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3A18BEF21C74A888006FC755 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6635C4D16E002340066276E /* libetpan-prepare-ios */;
+			targetProxy = 3A18BEF11C74A888006FC755 /* PBXContainerItemProxy */;
+		};
 		C6635C4816E000310066276E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C6635C4316DFFE6E0066276E /* libetpan-prepare */;
@@ -2558,6 +3007,83 @@
 			};
 			name = Release;
 		};
+		3A18BEED1C74A790006FC755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/..",
+					"$(SRCROOT)/include",
+					"$(SRCROOT)/libsasl-ios/include",
+					"$(SRCROOT)/libssl/include",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/libsasl-ios/lib",
+					"$(SRCROOT)/libssl/lib",
+					"$(PROJECT_DIR)/libssl/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = (
+					"-DHAVE_CFNETWORK=1",
+					"-DHAVE_CONFIG_H=1",
+					"-DUSE_SSL=1",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		3A18BEEE1C74A790006FC755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/..",
+					"$(SRCROOT)/include",
+					"$(SRCROOT)/libsasl-ios/include",
+					"$(SRCROOT)/libssl/include",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/libsasl-ios/lib",
+					"$(SRCROOT)/libssl/lib",
+					"$(PROJECT_DIR)/libssl/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = (
+					"-DHAVE_CFNETWORK=1",
+					"-DHAVE_CONFIG_H=1",
+					"-DUSE_SSL=1",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = YES;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 		C6635C4516DFFE6E0066276E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2575,6 +3101,11 @@
 		C6635C4F16E002340066276E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_CFLAGS = (
+					"-DHAVE_CFNETWORK=1",
+					"-DHAVE_CONFIG_H=1",
+					"-DUSE_SSL=1",
+				);
 				PLATFORM_NAME = iphoneos;
 				SDKROOT = iphoneos;
 			};
@@ -2583,6 +3114,11 @@
 		C6635C5016E002340066276E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_CFLAGS = (
+					"-DHAVE_CFNETWORK=1",
+					"-DHAVE_CONFIG_H=1",
+					"-DUSE_SSL=1",
+				);
 				PLATFORM_NAME = iphoneos;
 				SDKROOT = iphoneos;
 			};
@@ -2701,6 +3237,15 @@
 			buildConfigurations = (
 				1DEB91B208733DA50010E9CD /* Debug */,
 				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A18BEEC1C74A790006FC755 /* Build configuration list for PBXNativeTarget "libetpan-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A18BEED1C74A790006FC755 /* Debug */,
+				3A18BEEE1C74A790006FC755 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
