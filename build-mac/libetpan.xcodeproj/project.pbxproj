@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2307A00C170AAA5500C43C59 /* mailstream_compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 2307A00A170AAA5500C43C59 /* mailstream_compress.c */; };
 		365DFFD215D1C93100F2DD85 /* xgmmsgid.c in Sources */ = {isa = PBXBuildFile; fileRef = 365DFFD115D1C93100F2DD85 /* xgmmsgid.c */; };
+		3A18BE271C74745B006FC755 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18BE261C74745B006FC755 /* libssl.a */; };
+		3A18BE291C74745D006FC755 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18BE281C74745D006FC755 /* libcrypto.a */; };
 		8A75ECDA17040F92007F9972 /* mailimap_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75ECD917040F91007F9972 /* mailimap_sort.c */; };
 		8A75ECDB17040F92007F9972 /* mailimap_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75ECD917040F91007F9972 /* mailimap_sort.c */; };
 		8A75ECDC17040F92007F9972 /* mailimap_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75ECD917040F91007F9972 /* mailimap_sort.c */; };
@@ -579,6 +581,8 @@
 		2307A00B170AAA5500C43C59 /* mailstream_compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mailstream_compress.h; sourceTree = "<group>"; };
 		365DFFD115D1C93100F2DD85 /* xgmmsgid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xgmmsgid.c; sourceTree = "<group>"; };
 		365DFFD815D1CF1800F2DD85 /* xgmmsgid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xgmmsgid.h; sourceTree = "<group>"; };
+		3A18BE261C74745B006FC755 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = libssl/lib/libssl.a; sourceTree = "<group>"; };
+		3A18BE281C74745D006FC755 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = libssl/lib/libcrypto.a; sourceTree = "<group>"; };
 		8A75ECD917040F91007F9972 /* mailimap_sort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mailimap_sort.c; sourceTree = "<group>"; };
 		8A75ECDD17040FBD007F9972 /* mailimap_sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mailimap_sort.h; sourceTree = "<group>"; };
 		8A75ECE5170414B8007F9972 /* mailimap_sort_types.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mailimap_sort_types.c; sourceTree = "<group>"; };
@@ -1001,6 +1005,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A18BE271C74745B006FC755 /* libssl.a in Frameworks */,
+				3A18BE291C74745D006FC755 /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1041,6 +1047,8 @@
 		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				3A18BE281C74745D006FC755 /* libcrypto.a */,
+				3A18BE261C74745B006FC755 /* libssl.a */,
 				C6F9ED9A105338F60059C3BA /* Libraries */,
 				C6EFB8AD1433F58500F805C0 /* CoreFoundation.framework */,
 				C6EFB8B31433F5A400F805C0 /* CoreServices.framework */,
@@ -2592,10 +2600,19 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/libsasl-ios/include",
+					"$(SRCROOT)/libssl/include",
 				);
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/libsasl-ios/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/libsasl-ios/lib",
+					"$(PROJECT_DIR)/libssl/lib",
+				);
+				OTHER_CFLAGS = (
+					"-DHAVE_CFNETWORK=1",
+					"-DHAVE_CONFIG_H=1",
+					"-DUSE_SSL=1",
+				);
 				PRODUCT_NAME = "etpan-ios";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -2613,10 +2630,19 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/libsasl-ios/include",
+					"$(SRCROOT)/libssl/include",
 				);
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/libsasl-ios/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/libsasl-ios/lib",
+					"$(PROJECT_DIR)/libssl/lib",
+				);
+				OTHER_CFLAGS = (
+					"-DHAVE_CFNETWORK=1",
+					"-DHAVE_CONFIG_H=1",
+					"-DUSE_SSL=1",
+				);
 				PRODUCT_NAME = "etpan-ios";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
