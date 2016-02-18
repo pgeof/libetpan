@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		3A5A75F01C7628E600B5534B /* libetpan ios universal ssl */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3A5A75F31C7628E600B5534B /* Build configuration list for PBXAggregateTarget "libetpan ios universal ssl" */;
+			buildPhases = (
+				3A5A75F41C7628F300B5534B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "libetpan ios universal ssl";
+			productName = "libetpan ios universal ssl";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		2307A00C170AAA5500C43C59 /* mailstream_compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 2307A00A170AAA5500C43C59 /* mailstream_compress.c */; };
 		365DFFD215D1C93100F2DD85 /* xgmmsgid.c in Sources */ = {isa = PBXBuildFile; fileRef = 365DFFD115D1C93100F2DD85 /* xgmmsgid.c */; };
@@ -2052,6 +2066,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
+				TargetAttributes = {
+					3A5A75F01C7628E600B5534B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "libetpan" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2074,6 +2093,7 @@
 				C682E21815B315EF00BE9DA7 /* libetpan ios */,
 				C6635C4316DFFE6E0066276E /* libetpan-prepare */,
 				C6635C4D16E002340066276E /* libetpan-prepare-ios */,
+				3A5A75F01C7628E600B5534B /* libetpan ios universal ssl */,
 			);
 		};
 /* End PBXProject section */
@@ -2108,6 +2128,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "mkdir -p \"$BUILT_PRODUCTS_DIR/$PUBLIC_HEADERS_FOLDER_PATH\"\nmkdir -p \"$BUILT_PRODUCTS_DIR/include/libetpan\"\nln -sf \"Versions/Current/Headers\" \"$BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME/Headers\"\nrsync -aL \"$SRCROOT/../include/libetpan/\" \"$BUILT_PRODUCTS_DIR/include/libetpan/\"\nrsync -aL \"$SRCROOT/../include/libetpan/\" \"$BUILT_PRODUCTS_DIR/$PUBLIC_HEADERS_FOLDER_PATH/\"\n";
+		};
+		3A5A75F41C7628F300B5534B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -project libetpan.xcodeproj -target \"libetpan ios\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -project libetpan.xcodeproj -target \"libetpan ios\" -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/libetpan-ios.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/libetpan-ios.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/libetpan-ios.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+			showEnvVarsInLog = 0;
 		};
 		C6635C3316DFEFE00066276E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -3088,6 +3122,22 @@
 			};
 			name = Release;
 		};
+		3A5A75F11C7628E600B5534B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3A5A75F21C7628E600B5534B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
 		C6635C4516DFFE6E0066276E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3253,6 +3303,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		3A5A75F31C7628E600B5534B /* Build configuration list for PBXAggregateTarget "libetpan ios universal ssl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5A75F11C7628E600B5534B /* Debug */,
+				3A5A75F21C7628E600B5534B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		C6635C4416DFFE6E0066276E /* Build configuration list for PBXLegacyTarget "libetpan-prepare" */ = {
 			isa = XCConfigurationList;
