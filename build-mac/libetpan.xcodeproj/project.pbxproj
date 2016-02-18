@@ -776,7 +776,7 @@
 		365DFFD815D1CF1800F2DD85 /* xgmmsgid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xgmmsgid.h; sourceTree = "<group>"; };
 		3A18BE261C74745B006FC755 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = libssl/lib/libssl.a; sourceTree = "<group>"; };
 		3A18BE281C74745D006FC755 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = libssl/lib/libcrypto.a; sourceTree = "<group>"; };
-		3A18BEEF1C74A790006FC755 /* libetpan-ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "libetpan-ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A18BEEF1C74A790006FC755 /* libetpan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libetpan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A18BEF31C74BD04006FC755 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		3A18BEF51C74BD0F006FC755 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		3A18BEF71C74BF15006FC755 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
@@ -1240,7 +1240,7 @@
 				8DC2EF5B0486A6940098B216 /* libetpan.framework */,
 				C69AB10A10546FE500F32FBD /* libetpan.a */,
 				C682E2C015B315EF00BE9DA7 /* libetpan-ios.a */,
-				3A18BEEF1C74A790006FC755 /* libetpan-ios.framework */,
+				3A18BEEF1C74A790006FC755 /* libetpan.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1985,7 +1985,7 @@
 			name = "libetpan-ios";
 			productInstallPath = "$(HOME)/Library/Frameworks";
 			productName = libetpan;
-			productReference = 3A18BEEF1C74A790006FC755 /* libetpan-ios.framework */;
+			productReference = 3A18BEEF1C74A790006FC755 /* libetpan.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8DC2EF4F0486A6940098B216 /* libetpan */ = {
@@ -3041,7 +3041,7 @@
 					"-DHAVE_CONFIG_H=1",
 					"-DUSE_SSL=1",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = libetpan;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = framework;
@@ -3080,7 +3080,7 @@
 					"-DHAVE_CONFIG_H=1",
 					"-DUSE_SSL=1",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = libetpan;
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
