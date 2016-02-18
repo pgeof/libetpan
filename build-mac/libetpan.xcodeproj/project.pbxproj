@@ -211,6 +211,7 @@
 		3A18BEFD1C74BFF1006FC755 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F9EDAA1053394C0059C3BA /* libiconv.dylib */; };
 		3A18BEFE1C74C1A5006FC755 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18BE261C74745B006FC755 /* libssl.a */; };
 		3A18BEFF1C74C1A8006FC755 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A18BE281C74745D006FC755 /* libcrypto.a */; };
+		3A5A75F91C763B9500B5534B /* libetpan.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F9EAC1105335BD0059C3BA /* libetpan.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A75ECDA17040F92007F9972 /* mailimap_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75ECD917040F91007F9972 /* mailimap_sort.c */; };
 		8A75ECDB17040F92007F9972 /* mailimap_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75ECD917040F91007F9972 /* mailimap_sort.c */; };
 		8A75ECDC17040F92007F9972 /* mailimap_sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A75ECD917040F91007F9972 /* mailimap_sort.c */; };
@@ -1950,6 +1951,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		3A5A75F81C763B7A00B5534B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5A75F91C763B9500B5534B /* libetpan.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXLegacyTarget section */
 		C6635C4316DFFE6E0066276E /* libetpan-prepare */ = {
 			isa = PBXLegacyTarget;
@@ -1990,6 +2002,7 @@
 				3A18BE2E1C74A790006FC755 /* Resources */,
 				3A18BE2F1C74A790006FC755 /* Sources */,
 				3A18BEE11C74A790006FC755 /* Frameworks */,
+				3A5A75F81C763B7A00B5534B /* Headers */,
 			);
 			buildRules = (
 			);
