@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3A18BE2A1C74A790006FC755"
-               BuildableName = "libetpan-ios.framework"
+               BuildableName = "libetpan.framework"
                BlueprintName = "libetpan-ios"
                ReferencedContainer = "container:libetpan.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3A18BE2A1C74A790006FC755"
-            BuildableName = "libetpan-ios.framework"
+            BuildableName = "libetpan.framework"
             BlueprintName = "libetpan-ios"
             ReferencedContainer = "container:libetpan.xcodeproj">
          </BuildableReference>
@@ -55,7 +55,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3A18BE2A1C74A790006FC755"
-            BuildableName = "libetpan-ios.framework"
+            BuildableName = "libetpan.framework"
             BlueprintName = "libetpan-ios"
             ReferencedContainer = "container:libetpan.xcodeproj">
          </BuildableReference>
@@ -73,7 +73,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3A18BE2A1C74A790006FC755"
-            BuildableName = "libetpan-ios.framework"
+            BuildableName = "libetpan.framework"
             BlueprintName = "libetpan-ios"
             ReferencedContainer = "container:libetpan.xcodeproj">
          </BuildableReference>
